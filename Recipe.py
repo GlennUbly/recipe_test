@@ -41,7 +41,7 @@ recipe_df = recipe_df.to_csv(index=False).encode('utf-8')
 @st.experimental_fragment
 def show_download_button(file=recipe_df):
     #text_contents = recipe_df_1
-    st.download_button(label="Download data as csv",
+    st.download_button(label="Download your recipe as a csv!",
                        data=file,
                        file_name="recipe.csv",
                        mime="text/csv",
